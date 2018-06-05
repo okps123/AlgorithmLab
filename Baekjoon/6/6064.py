@@ -1,25 +1,8 @@
-# T = int(input())
-# for _ in range(T):
-#     m, n, x, y = map(int, input().split())
-#     i, j = 0, 0
-#     c = 0
-
-#     while True:
-#         i = 1 if i >= m else (i+1)
-#         j = 1 if j >= n else (j+1)
-#         c += 1
-
-#         if i == x and j == y:
-#             print(c)
-#             break
-#         elif i == m and j == n:
-#             print(-1)
-#             break
+# 6064번 카잉 달력
 
 def get_gcd(a, b):
     while b > 0:
         a, b = b, a % b
-
     return a
 
 def get_lcm(a, b):
