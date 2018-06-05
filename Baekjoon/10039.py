@@ -1,0 +1,1 @@
+print(int(sum(map(lambda score: max(score, 40), [int(input()) for i in range(5)]))/5))
