@@ -181,6 +181,9 @@ venv.bak/
 !.vscode/extensions.json
 .history
 
+### Mac ###
+.DS_Store
+
 
 # End of https://www.gitignore.io/api/c,c++,python,visualstudiocode
 
