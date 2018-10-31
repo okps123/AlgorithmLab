@@ -13,8 +13,8 @@
             "args": [],
             "stopAtEntry": false,
             "environment": [],
-            "externalConsole": true,
-            "MIMode": "lldb"
+            "externalConsole": false,
+            "MIMode": "gdb"
         }
     ]
 }
