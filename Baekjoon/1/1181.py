@@ -1,0 +1,1 @@
+print(*sorted(sorted(set([input() for i in range(int(input()))])), key=len), sep='\n')
