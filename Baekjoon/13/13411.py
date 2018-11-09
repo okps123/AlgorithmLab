@@ -1,0 +1,2 @@
+import math
+print(*list(map(lambda l: l[0], sorted(map(lambda l: (l[0]+1, math.sqrt(math.pow(l[1][0], 2)+math.pow(l[1][1], 2))/l[1][2]), enumerate(list([*map(int, input().split())] for i in range(int(input()))))), key=lambda l: l[1]))),sep='\n')
