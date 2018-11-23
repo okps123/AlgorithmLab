@@ -6,8 +6,7 @@ def solve(n, m):
     elif n < 3: return sum(m)
 
     dp = [0 for i in range(n+1)]
-    dp[1] = m[1]
-    dp[2] = m[1]+m[2]
+    dp[1], dp[2] = m[1], m[1] + m[2]
 
     for i in range(3, n+1):
         dp[i] = max(
