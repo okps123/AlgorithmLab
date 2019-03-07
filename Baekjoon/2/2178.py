@@ -8,9 +8,9 @@ q.append((0, 0))
 
 while q:
     y, x = q.popleft()
+
     for d in (-1, 0), (1, 0), (0, -1), (0, 1):
         dy, dx = y + d[0], x + d[1]
-
         if dy < 0 or dx < 0 or dy >= n or dx >= m:
             continue
 
