@@ -12,7 +12,7 @@ def dfs(n, m, v):
 
     x = []
     for i in sorted(l):
-        if not i in x:
+        if not i in x and not i in v:
             dfs(n, m, v+[i])
             x.append(i)
 
