@@ -1,20 +1,18 @@
 def read(): return map(int, input().split())
 
 
-n, m = read()
-l = list(read())
-
-
-def dfs(n, m, v):
+def dfs(n, m, v, u):
     if len(v) == m:
         print(*v, sep=' ')
         return
 
-    x = []
-    for i in sorted(l):
-        if not i in x and not i in v:
-            dfs(n, m, v+[i])
-            x.append(i)
+    us = []
+    for i in sorted(u):
+        if i in us:
+            continue
+        us += [i]
+        dfs(n, m, v+[i], u[:u.index(i)]+u[u.index(i)+1:])
 
 
-dfs(n, m, [])
+n, m = read()
+dfs(n, m, [], list(read()))
